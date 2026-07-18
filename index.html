@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Gomatic — Operations systems for B2B distributors</title>
+<title>Gomatic — Operations systems for B2B equipment distributors</title>
 <meta name="author" content="Gomatic" />
-<meta name="description" content="Gomatic connects your scattered systems — store, ERP, CRM — into one that runs without you in the middle. Built for B2B distributors." />
+<meta name="description" content="Gomatic connects your scattered systems — store, ERP, CRM — into one that runs without you in the middle. Built for B2B equipment distributors." />
 <meta name="keywords" content="B2B distribution automation, NetSuite GHL integration, WooCommerce automation, operations systems, equipment distributors" />
 <meta property="og:title" content="Gomatic" />
 <meta property="og:description" content="Your scattered systems, connected — so the business runs without routing through you." />
@@ -179,21 +179,18 @@
   .lightbox .lb-close { position:absolute; top:20px; right:24px; width:42px; height:42px; border-radius:50%; border:1px solid rgba(255,255,255,0.35); background:rgba(15,20,16,0.6); color:#fff; font-size:20px; cursor:pointer; display:grid; place-items:center; font-family:inherit; }
   .lightbox .lb-close:hover { background:var(--green); border-color:var(--green); }
 
-  /* CAPABILITIES (tabbed) */
-  .tabs { display:flex; gap:6px; justify-content:center; background:#fff; border:1px solid var(--line); border-radius:999px; padding:6px; width:max-content; max-width:100%; margin:0 auto 36px; flex-wrap:wrap; box-shadow:0 8px 20px -14px rgba(31,36,32,0.2); }
-  .tab-btn { font-family:'Inter',sans-serif; font-size:14px; font-weight:500; color:var(--ink-soft); background:none; border:none; padding:10px 20px; border-radius:999px; cursor:pointer; transition:all .2s; white-space:nowrap; }
-  .tab-btn:hover { color:var(--ink); }
-  .tab-btn.active { background:var(--green); color:#fff; font-weight:600; }
-  .tab-panel { display:none; }
-  .tab-panel.active { display:block; animation:fade .4s; }
-  @keyframes fade { from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:none;} }
-  .cap-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
-  @media (max-width:820px){ .cap-grid{ grid-template-columns:1fr; } }
-  .cap { border:1px solid var(--line); border-radius:16px; padding:26px 24px; background:#fff; transition:border-color .2s, transform .2s, box-shadow .2s; box-shadow:0 12px 30px -24px rgba(31,36,32,0.16); }
-  .cap:hover { border-color:var(--green-line); transform:translateY(-3px); box-shadow:0 20px 44px -26px rgba(5,152,73,0.26); }
-  .cap .c-ic { width:44px; height:44px; border-radius:11px; background:var(--green-wash); display:grid; place-items:center; color:var(--green-ink); margin-bottom:16px; }
-  .cap h3 { font-family:'Space Grotesk',sans-serif; font-size:18px; margin-bottom:8px; letter-spacing:-0.01em; }
-  .cap p { font-size:14px; color:var(--ink-soft); line-height:1.55; }
+  /* SERVICES */
+  .svc-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  @media (max-width:820px){ .svc-grid{ grid-template-columns:1fr; } }
+  .svc { position:relative; border:1px solid var(--line); border-radius:18px; padding:30px 28px 26px; background:#fff; transition:border-color .2s, transform .2s, box-shadow .2s; box-shadow:0 12px 30px -24px rgba(31,36,32,0.16); display:flex; flex-direction:column; gap:14px; }
+  .svc:hover { border-color:var(--green-line); transform:translateY(-3px); box-shadow:0 20px 44px -26px rgba(5,152,73,0.26); }
+  .svc-head { display:flex; align-items:flex-start; gap:14px; }
+  .svc-num { font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:500; color:var(--green-ink); background:var(--green-wash); border:1px solid var(--green-line); padding:5px 10px; border-radius:20px; flex-shrink:0; letter-spacing:0.06em; }
+  .svc h3 { font-family:'Space Grotesk',sans-serif; font-size:20px; letter-spacing:-0.01em; line-height:1.2; }
+  .svc-desc { font-size:15px; color:var(--ink-soft); line-height:1.55; }
+  .svc-quote { margin-top:auto; padding:14px 16px 14px 18px; background:var(--bg-2); border-left:3px solid var(--green); border-radius:0 10px 10px 0; font-size:14px; color:var(--ink); font-style:italic; line-height:1.5; position:relative; }
+  .svc-quote::before { content:"“"; font-family:'Space Grotesk',sans-serif; font-size:28px; color:var(--green); font-style:normal; font-weight:700; position:absolute; top:2px; left:6px; line-height:1; opacity:0.4; }
+  .svc-quote-label { display:block; font-family:'JetBrains Mono',monospace; font-size:10.5px; color:var(--ink-mute); text-transform:uppercase; letter-spacing:0.1em; font-style:normal; margin-bottom:4px; }
 
   /* PROCESS */
   .proc { display:grid; gap:16px; }
@@ -274,20 +271,21 @@
     </a>
     <div class="nav-links">
       <a href="#work">Case study</a>
-      <a href="#capabilities">What I do</a>
+      <a href="#capabilities">Services</a>
       <a href="#process">Process</a>
       <a href="#founder">Why Gomatic</a>
-      <a href="https://calendly.com/dwightcreatives/30min" class="btn btn-green">Free leak audit</a>
+      <a href="https://links.gomatic.today/widget/bookings/matic-system" class="btn btn-green">Free leak audit</a>
     </div>
   </div>
 </nav>
 
 <header id="top">
   <div class="wrap">
+    <span class="eyebrow center hero-eyebrow">Retention &amp; revenue systems · B2B equipment distribution</span>
     <h1>Your business only works <span class="grad">when you're there.</span></h1>
     <p class="hero-sub">I connect your scattered systems, your store, your ERP, your CRM, into one that runs on its own. No handoffs waiting on you. No orders slipping through.</p>
     <div class="hero-actions">
-      <a href="https://calendly.com/dwightcreatives/30min" class="btn btn-green">Get my free leak audit →</a>
+      <a href="https://links.gomatic.today/widget/bookings/matic-system" class="btn btn-green">Get my free leak audit →</a>
       <a href="#work" class="btn btn-ghost">See sample work</a>
     </div>
     <p class="hero-micro">Start with a short audit. If there's a leak worth fixing, we map it together.</p>
@@ -465,7 +463,7 @@
   <div class="wrap">
     <div class="sec-head reveal-up">
       <span class="eyebrow center">Case study</span>
-      <h2>How I automated a $1M rev distributor's order process.</h2>
+      <h2>How I automated a $500K/year distributor's order process.</h2>
       <p>Their entire order process ran on people remembering to act. Here's the system I built, and the difference it made.</p>
     </div>
 
@@ -534,36 +532,46 @@
 <section id="capabilities">
   <div class="wrap">
     <div class="sec-head reveal-up">
-      <span class="eyebrow center">What I do</span>
-      <h2>What I can build for you.</h2>
-      <p>Everything here is something the project above actually required, not a service menu copied from somewhere.</p>
+      <span class="eyebrow center">What I build</span>
+      <h2>Four systems every equipment distributor needs.</h2>
+      <p>Each one solves a specific place your operation quietly leaks time or revenue today.</p>
     </div>
 
-    <div class="tabs reveal-up" role="tablist">
-      <button class="tab-btn active" data-tab="t1">Connect your systems</button>
-      <button class="tab-btn" data-tab="t2">Win &amp; keep customers</button>
-      <button class="tab-btn" data-tab="t3">See the real numbers</button>
-    </div>
+    <div class="svc-grid">
+      <div class="svc reveal-up">
+        <div class="svc-head">
+          <span class="svc-num">01</span>
+          <h3>Customer &amp; Equipment Record System</h3>
+        </div>
+        <p class="svc-desc">One central place where every customer, every unit they own, its purchase date, and its coverage or warranty status lives. Right now that information is scattered across an ERP, spreadsheets, and people's memory. I consolidate it so anyone can answer a customer question in one look instead of checking three places.</p>
+        <div class="svc-quote"><span class="svc-quote-label">What they feel</span>I can finally see everything about a customer in one place.</div>
+      </div>
 
-    <div class="tab-panel active" id="t1">
-      <div class="cap-grid">
-        <div class="cap"><div class="c-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M8 4v16"/></svg></div><h3>Connect your tools</h3><p>Wire NetSuite, WooCommerce, and the software you already use so they talk to each other instead of needing manual re-entry.</p></div>
-        <div class="cap"><div class="c-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4"/></svg></div><h3>Automate the handoffs</h3><p>Turn the "someone has to message someone" steps into actions that happen on their own, so nothing stalls when a person is out.</p></div>
-        <div class="cap"><div class="c-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 2 7l10 5 10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><h3>One connected flow</h3><p>Store, ERP, CRM, and your team wired into a single flow so an order moves end to end without anyone babysitting it.</p></div>
+      <div class="svc reveal-up">
+        <div class="svc-head">
+          <span class="svc-num">02</span>
+          <h3>Coverage &amp; Service Alert System</h3>
+        </div>
+        <p class="svc-desc">Automates the tracking that currently depends on someone remembering. Alerts fire when a warranty is expiring, when a unit is due for service, when a renewal is approaching. The system watches the dates so nobody has to.</p>
+        <div class="svc-quote"><span class="svc-quote-label">What they feel</span>We stopped letting coverage lapse without noticing.</div>
       </div>
-    </div>
-    <div class="tab-panel" id="t2">
-      <div class="cap-grid">
-        <div class="cap"><div class="c-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg></div><h3>Find new leads</h3><p>An Apollo-driven outbound system that keeps new business coming in, and routes each lead to the right person fast.</p></div>
-        <div class="cap"><div class="c-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg></div><h3>Keep customers warm</h3><p>Existing customers get followed up automatically, with reminders, reactivation, and check-ins that don't rely on memory.</p></div>
-        <div class="cap"><div class="c-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></div><h3>Catch upsell chances</h3><p>Every promotion you run is watched for upsell signals, so revenue opportunities surface instead of getting missed.</p></div>
+
+      <div class="svc reveal-up">
+        <div class="svc-head">
+          <span class="svc-num">03</span>
+          <h3>Order &amp; Status Notification System</h3>
+        </div>
+        <p class="svc-desc">When an order comes in or changes status, the right people get told automatically, internal team and customer both. No more someone having to remember to send an update, and no more customers calling to ask where things stand.</p>
+        <div class="svc-quote"><span class="svc-quote-label">What they feel</span>Customers stopped chasing us for updates.</div>
       </div>
-    </div>
-    <div class="tab-panel" id="t3">
-      <div class="cap-grid">
-        <div class="cap"><div class="c-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></div><h3>One source of truth</h3><p>Your scattered numbers pulled into one reliable picture, using the data discipline I bring from a data science background.</p></div>
-        <div class="cap"><div class="c-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div><h3>Clear dashboards</h3><p>Live views built from your own data, so a straight answer is one glance away instead of a three-person chase.</p></div>
-        <div class="cap"><div class="c-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Find the leaks</h3><p>The audit maps where orders, follow-ups, and revenue slip, so you fix the most costly gap first, with proof.</p></div>
+
+      <div class="svc reveal-up">
+        <div class="svc-head">
+          <span class="svc-num">04</span>
+          <h3>Reorder &amp; Follow-Up System</h3>
+        </div>
+        <p class="svc-desc">Accounts get contacted when they're actually due to reorder, based on their purchase history and cycle, rather than whenever someone happens to think of it. Quotes that go quiet get followed up automatically instead of dying in an inbox.</p>
+        <div class="svc-quote"><span class="svc-quote-label">What they feel</span>We're catching revenue we used to lose by forgetting.</div>
       </div>
     </div>
   </div>
@@ -630,7 +638,7 @@
       <h2>I saw distribution systems break from the inside.</h2>
     </div>
     <div class="story reveal-up">
-      <p>Gomatic started with a pattern I kept seeing from the data side of B2B distribution.</p>
+      <p>Gomatic started with a pattern I kept seeing from the data side of B2B equipment distribution.</p>
       <p>Building source-of-truth data architecture for distributors, I watched the same thing happen again and again. The numbers lived in ten places that never agreed, and the actual <strong>work</strong> only moved when someone remembered to push it forward. Sales waited on ops, ops waited on billing, and the owner was stuck in the middle connecting every dot by hand.</p>
       <p>The tools weren't the problem. The <strong>disconnection</strong> between them was. So I started Gomatic to build the operations backbone these businesses were missing, connecting the store, the ERP, and the CRM into one system that runs whether or not anyone remembers to chase it.</p>
       <p>The data background is the point, not a footnote. Knowing how distribution data actually behaves is what lets me build automation that holds up in a real operation instead of breaking the first time something unusual happens.</p>
@@ -663,7 +671,7 @@
       <h2>Find out where your revenue is leaking.</h2>
       <p>The free audit maps your lead-to-customer journey and shows you exactly where orders, follow-ups, and revenue are slipping. No obligation.</p>
       <div class="hero-actions">
-        <a href="https://calendly.com/dwightcreatives/30min" class="btn btn-green">Get my free leak audit →</a>
+        <a href="https://links.gomatic.today/widget/bookings/matic-system" class="btn btn-green">Get my free leak audit →</a>
       </div>
       <div class="cta-contact">or email me directly · <a href="mailto:dwightcreatives@gmail.com">dwightcreatives@gmail.com</a></div>
     </div>
@@ -681,11 +689,11 @@
     </div>
     <div class="f-links">
       <a href="#work">Case study</a>
-      <a href="#capabilities">What I do</a>
+      <a href="#capabilities">Services</a>
       <a href="#process">Process</a>
       <a href="#faq">FAQ</a>
     </div>
-    <div class="f-meta">© 2026 Gomatic · operations systems for B2B distributors</div>
+    <div class="f-meta">© 2026 Gomatic · operations systems for B2B equipment distributors</div>
   </div>
 </footer>
 
@@ -711,15 +719,6 @@
   document.getElementById('lbClose').addEventListener('click', closeLb);
   lb.addEventListener('click', function(e){ if(e.target===lb){ closeLb(); } });
   document.addEventListener('keydown', function(e){ if(e.key==='Escape'){ closeLb(); } });
-
-  document.querySelectorAll('.tab-btn').forEach(function(btn){
-    btn.addEventListener('click', function(){
-      document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
-      document.querySelectorAll('.tab-panel').forEach(function(p){ p.classList.remove('active'); });
-      btn.classList.add('active');
-      document.getElementById(btn.dataset.tab).classList.add('active');
-    });
-  });
 
   document.querySelectorAll('.faq-q').forEach(function(btn){
     btn.addEventListener('click', function(){
