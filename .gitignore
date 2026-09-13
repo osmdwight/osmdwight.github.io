@@ -1,0 +1,22 @@
+# dependencies
+node_modules/
+.pnpm-store/
+.agents/
+
+# Next.js output
+.next/
+out/
+
+# local configuration
+.env*
+!.env.example
+
+# testing and tooling
+coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+
+# operating system
+.DS_Store
+Thumbs.db
