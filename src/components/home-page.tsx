@@ -2,12 +2,12 @@
 
 import { useRef, useState } from "react";
 import Image from "next/image";
-import { ArrowDownRight, ArrowRight, CalendarCheck, CaretLeft, CaretRight, Check, House, List, MapPin, Play, Wallet, X } from "@phosphor-icons/react";
+import { ArrowDownRight, ArrowRight, CalendarCheck, Quotes, CaretLeft, CaretRight, Check, House, List, MapPin, Play, Wallet, X } from "@phosphor-icons/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
-import { VIDEO_EMBED_URL, bentoFeatures, faqs, journeySteps, navigation, outcomeSlides, qualifiedChecks } from "@/lib/site";
+import { VIDEO_EMBED_URL, bentoFeatures, faqs, journeySteps, navigation, outcomeSlides, qualifiedChecks, testimonials } from "@/lib/site";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -279,6 +279,28 @@ export function HomePage() {
               </span>
             </button>
           ))}
+        </div>
+      </section>
+
+      <section className="testimonials section-pad" aria-labelledby="testimonials-title">
+        <div className="section-heading">
+          <h2 id="testimonials-title">What it&rsquo;s like working with us.</h2>
+          <p>Feedback from clients I&rsquo;ve built CRM and automation systems for.</p>
+        </div>
+        <div className="marquee">
+          <div className="marquee-track">
+            {[0, 1].map((copy) => (
+              <ul className="marquee-group" key={copy} aria-hidden={copy === 1 ? true : undefined}>
+                {testimonials.map((item) => (
+                  <li className="testimonial-card" key={`${copy}-${item.quote}`}>
+                    <Quotes size={28} weight="fill" aria-hidden="true" />
+                    <p>{item.quote}</p>
+                    <span>{item.source}</span>
+                  </li>
+                ))}
+              </ul>
+            ))}
+          </div>
         </div>
       </section>
 
