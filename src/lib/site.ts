@@ -85,8 +85,8 @@ export const outcomeSlides = [
   },
   {
     index: "03",
-    title: "Honest about where I am",
-    copy: "I'm Dwight. I build inquiry and booking systems for businesses, and I'm new to renovation. That's why the deal is built around paying per result, with a refund if I don't deliver.",
+    title: "You see every visit",
+    copy: "Every qualified visit goes into a shared log with the homeowner's answers, so you always know what you're paying for and why.",
   },
 ];
 
