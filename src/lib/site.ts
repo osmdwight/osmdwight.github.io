@@ -90,6 +90,31 @@ export const outcomeSlides = [
   },
 ];
 
+export const testimonials = [
+  {
+    quote:
+      "Dwight, your first 30 days have exceeded expectations. You took over a system that was mid-handoff and made it yours, then went well beyond it. More than any single deliverable, you have shown real ownership: you find what is broken, fix it, document it, and move on, without waiting to be asked.",
+    source: "Client, automation project",
+  },
+  {
+    quote: "You've been crushing it! Really appreciate you!",
+    source: "Client, CRM project",
+  },
+  {
+    quote:
+      "Dwight, you have been an absolute pleasure to work with, a golden asset to the team, and I know big things are coming your way. Keep up the great work!",
+    source: "Client, systems project",
+  },
+  {
+    quote: "I feel comfortable in owning the updates and Dwight's ability to handle changes as well.",
+    source: "Client, automation project",
+  },
+  {
+    quote: "You are the best!!",
+    source: "Client, CRM project",
+  },
+];
+
 export const faqs = [
   {
     question: "What if a homeowner doesn't show up?",
