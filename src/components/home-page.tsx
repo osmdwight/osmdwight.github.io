@@ -293,7 +293,10 @@ export function HomePage() {
               <ul className="marquee-group" key={copy} aria-hidden={copy === 1 ? true : undefined}>
                 {testimonials.map((item) => (
                   <li className="testimonial-card" key={`${copy}-${item.quote}`}>
-                    <Quotes size={28} weight="fill" aria-hidden="true" />
+                    <div className="testimonial-shot">
+                      <Image src={item.image} alt={`Screenshot of client feedback: ${item.quote}`} width={item.width} height={item.height} />
+                    </div>
+                    <Quotes size={22} weight="fill" aria-hidden="true" />
                     <p>{item.quote}</p>
                     <span>{item.source}</span>
                   </li>
