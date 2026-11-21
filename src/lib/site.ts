@@ -8,7 +8,7 @@ export type BentoFeature = {
 
 // Paste your Loom or YouTube *embed* URL here once the 2-minute video is recorded.
 // While it is empty, the video section is hidden.
-export const VIDEO_EMBED_URL = "";
+export const VIDEO_EMBED_URL = "https://www.loom.com/embed/e967a4605fd0423ebe5c854475c19d04";
 
 export const navigation = [
   { label: "How it works", href: "#services" },
