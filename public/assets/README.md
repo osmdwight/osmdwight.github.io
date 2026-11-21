@@ -24,3 +24,15 @@ The narrative prompt subjects are inquiry routing, confirmed booking, service fu
 ## Adding Assets
 
 Use descriptive kebab-case names. Generate or source at the final aspect ratio, keep important content away from crop edges, verify the image in its responsive container, and run `pnpm lint`, `pnpm test`, and `pnpm build` after changing references.
+
+## Testimonial screenshots
+
+Real client feedback screenshots supplied by Dwight, shown in the testimonials marquee with the quote typed out beside each for readability. Clients agreed to their feedback being shown.
+
+| File | Website use | Alt-text guidance |
+| --- | --- | --- |
+| `testimonial-first-30-days.png` | Testimonials marquee | "Screenshot of client feedback:" plus the typed quote. |
+| `testimonial-crushing-it.png` | Testimonials marquee | Same pattern. |
+| `testimonial-pleasure-to-work-with.png` | Testimonials marquee | Same pattern. |
+| `testimonial-handles-changes.png` | Testimonials marquee | Same pattern. |
+| `testimonial-you-are-the-best.png` | Testimonials marquee | Same pattern. |
