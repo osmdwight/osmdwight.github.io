@@ -174,7 +174,7 @@ export function HomePage() {
       <section className="video-section section-pad" aria-labelledby="video-title">
           <div className="section-heading">
             <h2 id="video-title">How it works, in 2 minutes.</h2>
-            <p>What I set up, what counts as a qualified visit, and how you pay.</p>
+            <p>What we do, what you do, and how you pay.</p>
           </div>
           <div className="video-frame">
             {VIDEO_EMBED_URL ? (
