@@ -173,7 +173,7 @@ export function HomePage() {
 
       <section className="video-section section-pad" aria-labelledby="video-title">
           <div className="section-heading">
-            <h2 id="video-title">How it works, in 2 minutes.</h2>
+            <h2 id="video-title">How it works.</h2>
             <p>What we do, what you do, and how you pay.</p>
           </div>
           <div className="video-frame">
@@ -182,7 +182,7 @@ export function HomePage() {
             ) : (
               <div className="video-placeholder">
                 <span className="video-play"><Play size={28} weight="fill" aria-hidden="true" /></span>
-                <strong>2-minute video coming soon</strong>
+                <strong>Video coming soon</strong>
                 <span>How it works and what a qualified visit means.</span>
               </div>
             )}
