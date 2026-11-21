@@ -154,7 +154,7 @@ export function HomePage() {
           </h1>
           <div className="hero-bottom hero-reveal">
             <p>
-              Site visits with homeowners who own the house and have a ₱500,000+ budget. You pay only when they show up, and get your setup fee back if I miss.
+              Site visits with homeowners who own the house and have the budget for the projects you want. You pay only when they show up, and get your setup fee back if I miss.
             </p>
             <div className="hero-actions">
               <BookingLink />
@@ -222,7 +222,7 @@ export function HomePage() {
                   </div>
                   <div className="review-stream-card review-stream-two">
                     <div className="review-stars"><Check size={14} weight="bold" /><Check size={14} weight="bold" /><Check size={14} weight="bold" /><Check size={14} weight="bold" /></div>
-                    <strong>Owner, ₱1.2M, starts in 6 weeks</strong>
+                    <strong>Owner, budget fits, starts in 6 weeks</strong>
                     <span>Passed all 4 checks</span>
                   </div>
                   <div className="review-stream-card review-stream-three">
