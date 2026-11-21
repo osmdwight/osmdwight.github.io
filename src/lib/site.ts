@@ -6,33 +6,38 @@ export type BentoFeature = {
   className: string;
 };
 
+// Paste your Loom or YouTube *embed* URL here once the 2-minute video is recorded.
+// While it is empty, the video section is hidden.
+export const VIDEO_EMBED_URL = "";
+
 export const navigation = [
-  { label: "What we automate", href: "#services" },
-  { label: "How it works", href: "#journey" },
-  { label: "Why it matters", href: "#outcomes" },
+  { label: "How it works", href: "#services" },
+  { label: "What counts", href: "#qualified" },
+  { label: "The deal", href: "#deal" },
+  { label: "FAQ", href: "#faq" },
 ];
 
 export const bentoFeatures: BentoFeature[] = [
   {
-    title: "Turn completed jobs into visible trust",
+    title: "Every inquiry screened before it reaches you",
     description:
-      "Gomatic follows up while the experience is fresh, routes happy customers toward Google, and keeps your team out of manual reminder loops.",
+      "Each homeowner answers four questions first: do they own the house, is the budget ₱500,000+, are they in your area, and do they want to start within 3 months. Price-shoppers never take your time.",
     columns: 7,
     rows: 2,
     className: "feature-reviews",
   },
   {
-    title: "Keep proof moving",
+    title: "Ads in your service area",
     description:
-      "Strong feedback becomes ready-to-publish social content, so your reputation works beyond the review page.",
+      "Facebook ads shown to homeowners near you who are planning a renovation. Written, built and run for you.",
     columns: 5,
     rows: 1,
     className: "feature-social",
   },
   {
-    title: "Answer while intent is high",
+    title: "Answered in minutes, day or night",
     description:
-      "An AI voice agent handles first-touch inquiries, captures context, and moves qualified callers toward a booked service.",
+      "Every inquiry gets a reply while the homeowner is still interested, not the next morning.",
     columns: 5,
     rows: 1,
     className: "feature-voice",
@@ -42,45 +47,73 @@ export const bentoFeatures: BentoFeature[] = [
 export const journeySteps = [
   {
     title: "Inquiry",
-    summary: "Respond before the next competitor does.",
-    detail: "Capture the caller, their need, and the best next action even when the team is busy.",
+    summary: "A homeowner sees your ad and asks about a renovation.",
+    detail: "They get an answer within minutes and go straight into the four screening questions.",
     image: "/assets/journey-inquiry.png",
   },
   {
     title: "Booking",
-    summary: "Move cleanly from interest to a confirmed job.",
-    detail: "Use consistent questions and follow-up so fewer qualified opportunities fall through the gaps.",
+    summary: "Only qualified homeowners get a slot on your calendar.",
+    detail: "Everyone else gets a polite reply. Booked homeowners get reminders so they actually show up.",
     image: "/assets/journey-booking.png",
   },
   {
-    title: "Fulfillment",
-    summary: "Keep the customer informed without extra admin.",
-    detail: "Trigger the right message at the right milestone while the team focuses on delivering the service.",
+    title: "Site visit",
+    summary: "You walk into a visit with someone ready to build.",
+    detail: "You already know the budget, the area and the timeline before you leave for the visit. Closing the job is your expertise.",
     image: "/assets/journey-fulfillment.png",
   },
-  {
-    title: "Reputation",
-    summary: "Ask for feedback at the moment it makes sense.",
-    detail: "Turn a finished job into a thoughtful review request and a stronger public reputation.",
-    image: "/assets/journey-reputation.png",
-  },
+];
+
+export const qualifiedChecks = [
+  { title: "Owns the house", detail: "Or is the one who decides on it." },
+  { title: "₱500,000+ budget", detail: "A real budget, stated up front." },
+  { title: "In your service area", detail: "No long drives for nothing." },
+  { title: "Starting within 3 months", detail: "And they showed up to the visit." },
 ];
 
 export const outcomeSlides = [
   {
     index: "01",
-    title: "Fewer quiet gaps",
-    copy: "A connected follow-up system means inquiries, booked work, and completed jobs do not disappear into separate tools.",
+    title: "You pay for visits, not promises",
+    copy: "The per-visit fee is only charged for qualified homeowners who actually show up. A no-show costs you nothing.",
   },
   {
     index: "02",
-    title: "More useful proof",
-    copy: "Customer feedback becomes a reusable sales asset across Google and social channels instead of sitting in one place.",
+    title: "One contractor per city",
+    copy: "Two contractors in the same city would compete for the same homeowners. So I only take one per city. Book a call to check if yours is open.",
   },
   {
     index: "03",
-    title: "A journey your team can repeat",
-    copy: "Automation handles the predictable handoffs while people step in where judgment, care, and expertise matter most.",
+    title: "Honest about where I am",
+    copy: "I'm Dwight. I build inquiry and booking systems for businesses, and I'm new to renovation. That's why the deal is built around paying per result, with a refund if I don't deliver.",
+  },
+];
+
+export const faqs = [
+  {
+    question: "What if a homeowner doesn't show up?",
+    answer: "You don't pay for it. The per-visit fee is only for qualified visits that actually happen.",
+  },
+  {
+    question: "Who pays for the ads?",
+    answer: "You do, directly to Facebook. That money never passes through me.",
+  },
+  {
+    question: "Do you guarantee the visit turns into a project?",
+    answer: "No. I deliver qualified homeowners to your site visit. Closing the job is up to you.",
+  },
+  {
+    question: "What if I get fewer than 4 qualified visits in 60 days?",
+    answer: "I refund your setup fee.",
+  },
+  {
+    question: "How much does it cost?",
+    answer: "A one-time setup fee, then a fee for each qualified visit that shows up. I'll walk you through the exact numbers on the call, once we know your area fits.",
+  },
+  {
+    question: "Do you have renovation results to show?",
+    answer: "Not yet. You'd be one of my first renovation clients, which is why you pay per result.",
   },
 ];
 
