@@ -1228,3 +1228,79 @@ a {
   color: var(--ink-deep);
   background: var(--acid);
 }
+
+/* Testimonials marquee: moves left to right, pauses on hover */
+.testimonials {
+  padding-right: 0;
+  padding-left: 0;
+  background: var(--ink-deep);
+}
+
+.testimonials .section-heading {
+  padding: 0 5vw;
+}
+
+.marquee {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-right 55s linear infinite;
+}
+
+.marquee:hover .marquee-track,
+.marquee:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee-group {
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0 0.625rem;
+  list-style: none;
+}
+
+.testimonial-card {
+  width: min(380px, 78vw);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--forest);
+}
+
+.testimonial-card svg {
+  color: var(--acid);
+}
+
+.testimonial-card p {
+  flex: 1;
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.testimonial-card span {
+  color: var(--muted);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+}
+
+@keyframes marquee-right {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee { overflow-x: auto; -webkit-mask-image: none; mask-image: none; }
+  .marquee-track { animation: none; }
+  .marquee-group[aria-hidden="true"] { display: none; }
+}
