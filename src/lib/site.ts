@@ -111,10 +111,6 @@ export const faqs = [
     question: "How much does it cost?",
     answer: "A one-time setup fee, then a fee for each qualified visit that shows up. I'll walk you through the exact numbers on the call, once we know your area fits.",
   },
-  {
-    question: "Do you have renovation results to show?",
-    answer: "Not yet. You'd be one of my first renovation clients, which is why you pay per result.",
-  },
 ];
 
 export function calculateBentoCells(features: BentoFeature[]) {
