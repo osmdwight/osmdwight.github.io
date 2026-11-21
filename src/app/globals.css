@@ -1304,3 +1304,22 @@ a {
   .marquee-track { animation: none; }
   .marquee-group[aria-hidden="true"] { display: none; }
 }
+
+.testimonial-shot {
+  display: grid;
+  place-items: center;
+  min-height: 96px;
+  padding: 0.75rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 0.6rem;
+  background: #111113;
+}
+
+.testimonial-shot img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.35rem;
+}
