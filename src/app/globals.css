@@ -1068,3 +1068,163 @@ a {
   }
   .manifesto-word { opacity: 1; }
 }
+
+/* ---------- Renovation offer sections ---------- */
+
+.video-section {
+  background: var(--ink-deep);
+}
+
+.video-frame {
+  position: relative;
+  width: min(1000px, 100%);
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 1.5rem;
+  background: var(--forest);
+}
+
+.video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.qualified {
+  background: var(--ink-deep);
+}
+
+.check-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.check-card {
+  padding: 1.75rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--forest);
+  transition: border-color 200ms ease, transform 200ms ease;
+}
+
+.check-card:hover {
+  border-color: #52525b;
+  transform: translateY(-3px);
+}
+
+.check-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  color: var(--ink-deep);
+  background: var(--acid);
+}
+
+.check-card h3 {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.check-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.faq {
+  background: var(--ink-deep);
+}
+
+.faq-list {
+  width: min(860px, 100%);
+  border-top: 1px solid var(--line);
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--line);
+}
+
+.faq-item summary {
+  min-height: 64px;
+  padding: 1.4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  flex: none;
+  color: var(--acid);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.4rem;
+}
+
+.faq-item[open] summary::after {
+  content: "\2013";
+}
+
+.faq-item p {
+  margin: 0;
+  padding: 0 0 1.5rem;
+  max-width: 680px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 980px) {
+  .check-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 680px) {
+  .check-grid { grid-template-columns: 1fr; }
+}
+
+.video-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--muted);
+  background: radial-gradient(circle at 50% 40%, rgba(163, 230, 53, 0.1), transparent 55%), var(--forest);
+}
+
+.video-placeholder strong {
+  margin-top: 0.8rem;
+  color: var(--ink);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 600;
+}
+
+.video-play {
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--ink-deep);
+  background: var(--acid);
+}
