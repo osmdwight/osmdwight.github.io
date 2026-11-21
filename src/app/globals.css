@@ -1078,7 +1078,7 @@ a {
 .video-frame {
   position: relative;
   width: min(1000px, 100%);
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 1600 / 1040;
   margin: 0 auto;
   overflow: hidden;
   border: 1px solid var(--line);
