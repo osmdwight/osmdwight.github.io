@@ -21,7 +21,7 @@ export const bentoFeatures: BentoFeature[] = [
   {
     title: "Every inquiry screened before it reaches you",
     description:
-      "Each homeowner answers four questions first: do they own the house, is the budget ₱500,000+, are they in your area, and do they want to start within 3 months. Price-shoppers never take your time.",
+      "Each homeowner answers four questions first: do they own the house, does their budget match the size of job you take on, are they in your area, and do they want to start within 3 months. Price-shoppers never take your time.",
     columns: 7,
     rows: 2,
     className: "feature-reviews",
@@ -67,7 +67,7 @@ export const journeySteps = [
 
 export const qualifiedChecks = [
   { title: "Owns the house", detail: "Or is the one who decides on it." },
-  { title: "₱500,000+ budget", detail: "A real budget, stated up front." },
+  { title: "Budget that fits your jobs", detail: "Set to the minimum project size you take on." },
   { title: "In your service area", detail: "No long drives for nothing." },
   { title: "Starting within 3 months", detail: "And they showed up to the visit." },
 ];
